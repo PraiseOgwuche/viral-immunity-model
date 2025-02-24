@@ -1,0 +1,160 @@
+/* style.css */
+
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #607D8B;
+    --background-color: #f5f5f5;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.control-panel {
+    padding: 15px;
+}
+
+/* Parameter Groups */
+.parameter-group {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.parameter-group h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Form Controls */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.parameter-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Main Content Area */
+.main-content {
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+/* Chart Container */
+.chart-container {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+#chartWrapper {
+    position: relative;
+    height: 400px;
+}
+
+/* Results Summary */
+.results-summary {
+    margin-top: 30px;
+}
+
+.metric-card {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.metric-card h4 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.metric-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+    .chart-container {
+        padding: 10px;
+    }
+    
+    #chartWrapper {
+        height: 300px;
+    }
+}
