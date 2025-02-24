@@ -1,4 +1,4 @@
-# viral-immunity-model# Viral Infection & Immune Response Simulation
+# Viral Infection & Immune Response Simulation
 
 A web-based simulation tool for modeling viral infection dynamics and immune system responses. This application provides an interactive interface to explore how viruses spread and how the immune system responds through T cells and antibodies.
 
